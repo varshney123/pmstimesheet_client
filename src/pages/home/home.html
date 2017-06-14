@@ -1,14 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      PMS APP
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+     <ion-list>
+
+  <ion-item>
+    <ion-label floating>Email ID</ion-label>
+    <ion-input [(ngModel)]="username" type="email" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>
+  </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <ion-card-content>
+  <button ion-button round (click)="login()" >Sign In</button>
+  </ion-card-content>
+  </div>
+
 </ion-content>
