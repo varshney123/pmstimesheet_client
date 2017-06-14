@@ -6,8 +6,16 @@
   </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
      <ion-list>
+
+<!--<ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar> -->
 
   <ion-item>
     <ion-label floating>Email ID</ion-label>
@@ -23,7 +31,10 @@
 
   <div padding>
     <ion-card-content>
+       <!--<div class="col text-center">-->
+
   <button ion-button round (click)="login()" >Sign In</button>
+       <!--</div>-->
   </ion-card-content>
   </div>
 
